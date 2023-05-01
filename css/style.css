@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box; /* debe calcular el ancho y alto total de un elemento.*/
+    padding:0; /* si pongo el padding en 0 no hay distancia entre el elemento y el borde*/
+    margin: 0; /*se queda junto al padding*/
+}
+
+.batman{
+  /*   posicionamiento */
+  position: fixed; /*el elemento queda fijo*/
+  top:50%;
+  left:50%;
+  border-radius: 50%;
+  transform:translate(-50%,-50%); /* los elementos pueden ser trasladados, rotados, escalados o sesgados de acuerdo a los valores establecidos.*/
+ /*  Estilo */
+ min-width: 700px;
+ height: 500px;
+ background-size: contain; /*la imagen se estira sin recortar*/
+ background-repeat: no-repeat;
+background-position: center;
+ background-image: url(../img/batmanOFF.jpg);
+}
+
+.batman_activo{
+    background-image: url(../img/batmanON.gif);
+}
+
+.bati_boton{
+    margin:291px auto 0; 
+    /* Estilo*/
+    width:30px;
+    height:50px;
+    border: 1px solid red;
+
+}
